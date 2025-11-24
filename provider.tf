@@ -12,5 +12,5 @@ provider "google" {
   region  = var.region
   zone    = var.zone
 
-  credentials = file("robust-arcadia-475009-p4-4ab3ded29f5d.json")
+  credentials = file("${path.module}/sa-key.json")
 }
