@@ -12,5 +12,5 @@ provider "google" {
   region  = var.region
   zone    = var.zone
 
-  credentials = file("service-account.json)
+  credentials = file("robust-arcadia-475009-p4-4ab3ded29f5d.json")
 }
