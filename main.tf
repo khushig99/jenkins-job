@@ -20,6 +20,6 @@ resource "google_compute_instance" "jenkins_vm" {
   tags = ["jenkins", "ci-cd"]
 
   metadata = {
-    ssh-keys = "your-username:${file("~/.ssh/id_rsa.pub")}"
+    enable-oslogin = "TRUE"
   }
 }
